@@ -22,7 +22,7 @@ class GameWindow < Gosu::Window
     update_enemies
     @projectiles.each(&:update) # Update each projectile
     update_spawn_timer
-    spawn_enemies(3) # Spawn 5 enemies every 5 seconds
+    spawn_enemies(1) # Spawn 5 enemies every 5 seconds
     check_projectile_collisions() # Check for projectile collisions
   end
 
